@@ -1,0 +1,580 @@
+!German rock
+|----In extremo
+|    |----01-In Extremo 1997
+|    |    |----01-Der Galgen.mp3
+|    |    |----02-Como Poden.mp3
+|    |    |----03-Mariae Buergen - Quem A Amagem Da Virgin.mp3
+|    |    |----04-Rotes Haar.mp3
+|    |    |----05-Ai Bis Lo Lop.mp3
+|    |----02-Gold 1997
+|    |    |----01-Intro - Ecce Rex Bandary.mp3
+|    |    |----02-Pavane.mp3
+|    |    |----03-Schaf Oda Nix Schaf.mp3
+|    |    |----04-Tourdion.mp3
+|    |    |----05-Neva Ceng I Harbe.mp3
+|    |    |----06-Fur Bo.mp3
+|    |    |----07-Quant Je Sui Mis Au Retour.mp3
+|    |    |----08-Neunerle.mp3
+|    |    |----09-Lulbap - Como Poden.mp3
+|    |    |----10-Villeman Og Magnhild.mp3
+|    |----03-Hameln 1998
+|    |    |----01-Reth.mp3
+|    |    |----02-Quint Je Sui Mis Au Retour.mp3
+|    |    |----03-Stella Splendens.mp3
+|    |    |----04-Vor Vollen Schusseln.mp3
+|    |    |----05-Traubentritt.mp3
+|    |    |----06-Two Sostra - Harpa.mp3
+|    |    |----07-Reth.mp3
+|    |    |----08-Estampie.mp3
+|    |    |----09-Dodet.mp3
+|    |    |----10-'Franzosisch'.mp3
+|    |    |----11-Reth - Tierliebe.mp3
+|    |    |----12-Wie Kann Ich Das Herz Meiner Liebsten Gewinnen.mp3
+|    |    |----13-Hameln.mp3
+|    |    |----14-Merseburger Zauberspruche.mp3
+|    |    |----15-Lyte.mp3
+|    |    |----16-Fur Insider (Bonus).mp3
+|    |----04-Weckt Die Toten! 1998
+|    |    |----01-Ai Vis Lo Lop.mp3
+|    |    |----02-Stella Splendens.mp3
+|    |    |----03-Hiemali Tempore.mp3
+|    |    |----04-Rotes Haar.mp3
+|    |    |----05-Villeman Og Magnhild.mp3
+|    |    |----06-Como Poden.mp3
+|    |    |----07-Palastunalied.mp3
+|    |    |----08-Vor Vollen Schusseln.mp3
+|    |    |----09-Maria Virgin.mp3
+|    |    |----10-Totus Floreo.mp3
+|    |    |----11-Der Galgen.mp3
+|    |    |----12-Two Sostra.mp3
+|    |----05-Die Verrueckten Sind In Der Stadt 1998
+|    |    |----01-Ansage 6 Vagabunden.mp3
+|    |    |----02-Galgen.mp3
+|    |    |----03-Ansage Totus Florio.mp3
+|    |    |----04-Totus Florio.mp3
+|    |    |----05-Ansage Maria.mp3
+|    |    |----06-Scaracuila.mp3
+|    |    |----07-Ansage Dodet.mp3
+|    |    |----08-Skudrinka (Dodet).mp3
+|    |    |----09-Ansage Quant.mp3
+|    |    |----10-Quant Je Suis Mis Au Retour.mp3
+|    |    |----11-Hameln.mp3
+|    |    |----12-Neva Ceng I Harbe.mp3
+|    |    |----13-Ansage Villeman.mp3
+|    |    |----14-Villeman Og Magnhild.mp3
+|    |    |----15-Neunerle.mp3
+|    |    |----16-Ansage Fred.mp3
+|    |    |----17-Traubentritt.mp3
+|    |    |----18-Vorstellung.mp3
+|    |    |----19-Ecce Rex Darius.mp3
+|    |    |----20-Ansage Englaender.mp3
+|    |    |----21-Wie Kann Ich Das Herz Meiner Liebsten Gewinnen.mp3
+|    |    |----22-Absammeln.mp3
+|    |----06-Verehrt Und Angespien 1999
+|    |    |----01-Merseburger Zauberspruche.mp3
+|    |    |----02-Ich Kenne Alles.mp3
+|    |    |----03-Herr Mannelig.mp3
+|    |    |----04-Pavane.mp3
+|    |    |----05-Spielmannsfluch.mp3
+|    |    |----06-Weiberfell.mp3
+|    |    |----07-Miss Gordon Of Gight.mp3
+|    |    |----08-Werd Ich Am Galgen Hochgezogen.mp3
+|    |    |----09-This Corrosion.mp3
+|    |    |----10-Santa Maria.mp3
+|    |    |----11-Vanner Och Frande.mp3
+|    |    |----12-In Extremo.mp3
+|    |    |----13-Herr Mannelig (Acoustic Version).mp3
+|    |----07-Sunder Ohne Zugel 2001
+|    |    |----01-Wind.mp3
+|    |    |----02-Krummavisur.mp3
+|    |    |----03-Lebensbeichte.mp3
+|    |    |----04-Merseburger Zauberspruche II.mp3
+|    |    |----05-Stetit Puella.mp3
+|    |    |----06-Vollmond.mp3
+|    |    |----07-Die Gier.mp3
+|    |    |----08-Omnia Sol Temperat.mp3
+|    |    |----09-Le 'or Chiyuchech.mp3
+|    |    |----10-Der Rattenfanger.mp3
+|    |    |----11-Oskasteinar.mp3
+|    |    |----12-Nature Nous Semont.mp3
+|    |    |----13-Unter Dem Meer.mp3
+|    |----08-Feuertaufe 2000
+|    |    |----01-Intro.mp3
+|    |    |----02-Stern Von Bethlehem.mp3
+|    |    |----03-Das Katzentier.mp3
+|    |    |----04-Die Magd Des Herrn.mp3
+|    |    |----05-Operie Femina.mp3
+|    |    |----06-Es.mp3
+|    |    |----07-Bruder Tod.mp3
+|    |    |----08-Jerusalem.mp3
+|    |    |----09-Der Erloser.mp3
+|    |    |----10-Hexenmeister.mp3
+|    |    |----11-Saufergrab.mp3
+|    |    |----12-Ich Hab Gelebt... .mp3
+|    |    |----13-Der Gelbe Vogel.mp3
+|    |----09-Heute Ist Die Rache Mein 2001
+|    |    |----01-Intro.mp3
+|    |    |----02-Verrater.mp3
+|    |    |----03-Hexenjagd.mp3
+|    |    |----04-Ach So bald.mp3
+|    |    |----05-Am Kreuze.mp3
+|    |    |----06-April.mp3
+|    |    |----07-Dein Geist Ist Willig.mp3
+|    |    |----08-Frei.mp3
+|    |    |----09-Bis Aufs Blut.mp3
+|    |    |----10-Totenschimmel.mp3
+|    |    |----11-Heute Ist Die Rache Mein.mp3
+|    |    |----12-Der Diener.mp3
+|    |    |----13-Das Spiel Ist Aus.mp3
+|    |----10-Als Die Erde Eine Scheibe War... 2001
+|    |    |----01-Totus Floreo.mp3
+|    |    |----02-Skudrinka.mp3
+|    |    |----03-Schondilg.mp3
+|    |    |----04-Caro Ortolano.mp3
+|    |    |----05-Maledicantur Thylie.mp3
+|    |    |----06-Vite Perdite.mp3
+|    |    |----07-Vite Perdite TranX.mp3
+|    |    |----08-Stella Inferna.mp3
+|    |    |----09-Trommeln Der Nacht.mp3
+|    |    |----10-Violenca.mp3
+|    |    |----11-Quid Habis -.mp3
+|    |    |----12-Seltsam Im Nebel (bonus).mp3
+|    |----Santa Maria
+|    |    |----Ai Vis Lo Lop.mp3
+|    |    |----Como Poden.mp3
+|    |    |----Der Galgen.mp3
+|    |    |----Herr Mannelig.mp3
+|    |    |----Hiemali Tempore.mp3
+|    |    |----Ich kenne alles.mp3
+|    |    |----Krummavisur.mp3
+|    |    |----Kuss Mich.mp3
+|    |    |----Lebensbeichte.mp3
+|    |    |----Madre Deus.mp3
+|    |    |----Rotes Haar.mp3
+|    |    |----Sagrada Trobar.mp3
+|    |    |----Santa Maria.mp3
+|    |    |----Separdim.mp3
+|    |    |----This Corrosion.mp3
+|    |    |----Totus Florio.mp3
+|    |    |----Two Sostra.mp3
+|    |    |----Villeman Og Magnhild.mp3
+|    |    |----Vollmond.mp3
+|    |    |----Von Vollen Schusseln.mp3
+|----Oomph!
+|    |----1992 - Oomph!
+|    |    |----01 - Mein Herz.mp3
+|    |    |----02 - Me Inside You.mp3
+|    |    |----03 - Der Neue Gott.mp3
+|    |    |----04 - No Heart No Pain.mp3
+|    |    |----05 - Breathe.mp3
+|    |    |----06 - Gleichschritt.mp3
+|    |    |----07 - Under Pressure.mp3
+|    |    |----08 - Wir Leben.mp3
+|    |    |----09 - Purpel Skin.mp3
+|    |    |----10 - Ich Bin Du.mp3
+|    |    |----11 - Der Neue Gott (Bonus).mp3
+|    |    |----cover.jpg
+|    |----1994 - 3+1
+|    |    |----Oomph! - Das Ist Freiheit [Jailhouse-Mix].mp3
+|    |    |----Oomph! - Fleisch.mp3
+|    |----1994 - Sperm
+|    |    |----01 - Suck - Taste - Spit.mp3
+|    |    |----02 - Sex.mp3
+|    |    |----03 - War.mp3
+|    |    |----06 - Feiert Das Kreuz.mp3
+|    |    |----07 - Love.mp3
+|    |    |----08 - Das Ist Freiheit.mp3
+|    |    |----09 - Kismet.mp3
+|    |    |----10 - Breathtaker.mp3
+|    |----1995 - Defect
+|    |    |----01 - Hate Sweet Hate .mp3
+|    |    |----02 - Ice Coffin .mp3
+|    |    |----03 - Willst Du Hattnung  .mp3
+|    |    |----04 - Hello My Name Is Cancer .mp3
+|    |    |----05 - Zeitweitig Incontinent .mp3
+|    |    |----06 - Hast Du Geglaubt  .mp3
+|    |    |----07 - Come And Kick Me .mp3
+|    |    |----08 - Turn The Knife .mp3
+|    |    |----09 - Decubitus Vulgaris .mp3
+|    |    |----10 - Mitten Ins Herz .mp3
+|    |    |----11 - Your Love Is Kitting Me .mp3
+|    |    |----12 - Defekt .mp3
+|    |    |----cover.jpg
+|    |----1996 - Wunschkind
+|    |    |----01 - Born-Praised-Kissed.mp3
+|    |    |----02 - Wunschkind.mp3
+|    |    |----03 - You`ve Got It.mp3
+|    |    |----04 - Down In This Hole.mp3
+|    |    |----05 - Walsungenblut.mp3
+|    |    |----06 - Kruppel.mp3
+|    |    |----07 - My Soubrette.mp3
+|    |    |----08 - Mind Over Matter.mp3
+|    |    |----09 - Filthy Play Ground.mp3
+|    |    |----10 - I.N.R.I. Vs Jahwe.mp3
+|    |    |----11 - Song For Whoever.mp3
+|    |    |----12 - Der Alptraum Der Kindheit.mp3
+|    |    |----cover.jpg
+|    |----1998 - Unrein
+|    |    |----02 - Unsere rettung.mp3
+|    |    |----03 - Die maske.mp3
+|    |    |----04 - My hell.mp3
+|    |    |----05 - Gekreuzigt.mp3
+|    |    |----06 - Zero endorphine.mp3
+|    |    |----07 - Willst du mein leben entern.mp3
+|    |    |----08 - Why I'll Never Be) Clean Again.mp3
+|    |    |----09 - Unrein.mp3
+|    |    |----10 - Anniversary.mp3
+|    |    |----11 - Foil.mp3
+|    |    |----12 - Bastard.mp3
+|    |    |----13 - Another disease.mp3
+|    |    |----14 - Meine wunden.mp3
+|    |----1998 - Unsere Rettung
+|    |    |----01 - Unsere Rettung (Radio Mix).mp3
+|    |    |----02 - Unsere Rettung (Club Mix).mp3
+|    |    |----03 - This Time.mp3
+|    |    |----04 - Monolith.mp3
+|    |----1999 - Plastik
+|    |    |----01 - Das Weisse Licht.mp3
+|    |    |----03 - Scorn.mp3
+|    |    |----04 - Keine Luft Mehr.mp3
+|    |    |----05 - Hunger.mp3
+|    |    |----06 - Nothing Is Real.mp3
+|    |    |----07 - Mein Traum.mp3
+|    |    |----08 - Always.mp3
+|    |    |----09 - Goldenes Herz.mp3
+|    |    |----10 - I Come Alive.mp3
+|    |    |----11 - Fieber feat. Nina Hagen.mp3
+|    |    |----12 - My Own Private Prison.mp3
+|    |    |----13 - Das Weisse Licht (Refraction).mp3
+|    |----2001 - Ego
+|    |    |----01 - Ego.mp3
+|    |    |----02 - Supernova.mp3
+|    |    |----03 - Willst Du Frei Sein.mp3
+|    |    |----04 - Drop The Lie.mp3
+|    |    |----05 - Bitter.mp3
+|    |    |----06 - Transformation.mp3
+|    |    |----07 - Atem.mp3
+|    |    |----08 - Serotonin.mp3
+|    |    |----09 - Swallow.mp3
+|    |    |----10 - Viel Zu Tief.mp3
+|    |    |----11 - My Darkest Cave.mp3
+|    |    |----12 - Rette Mich.mp3
+|    |    |----13 - Who You Are.mp3
+|    |    |----14 - Kontrollverlust.mp3
+|    |    |----15 - Dopamin.mp3
+|    |    |----16 - Traum Weiter.mp3
+|    |    |----17 - Supernova (Space Jazz Dub).mp3
+|    |    |----cover.jpg
+|    |----2001 - Niemand
+|    |    |----01 - Niemand.mp3
+|    |    |----02 - Niemand ('Tyranno'-Rmx).mp3
+|    |    |----03 - Niemand ('La Floa Maldita'-Rmx).mp3
+|    |    |----04 - Swallow ('Unplugged In-Version).mp3
+|    |----2004 - Augen Auf
+|    |    |----03 - Burn Your Eyes.mp3
+|    |    |----04 - Eisbr.mp3
+|    |    |----05 - Augen Auf! (Freizeichen vs. Oomph!-Mix).mp3
+|    |----2004 - Brennende Liebe
+|    |    |----01 - Brennende Liebe.mp3
+|    |    |----02 - Eiszeit.mp3
+|    |    |----03 - Kill Me Again.mp3
+|    |    |----04 - Brennende Liebe (Transporterraum Remix).mp3
+|    |    |----05 - Brennende Liebe (Hot Love Mix).mp3
+|    |----2004 - Sex Hat Keine Macht
+|    |    |----01 - Sex Hat Keine Macht (Single Version).mp3
+|    |    |----02 - Tausend Neue Lugen.mp3
+|    |    |----03 - Sex Hat Keine Macht (Transporterraum Remix).mp3
+|    |    |----04 - The World Is Yours.mp3
+|    |----2004 - Wahrheit Oder Pflicht
+|    |    |----01 - Augen Auf!.mp3
+|    |    |----02 - Tausend Neue Ligen.mp3
+|    |    |----03 - Wenn Du Weinst.mp3
+|    |    |----04 - Sex Hat Keine Macht.mp3
+|    |    |----05 - Burn Your Eyes (Bonus Track).mp3
+|    |    |----06 - Dein Weg.mp3
+|    |    |----07 - Du Spielst Gott.mp3
+|    |    |----08 - Dein Feuer.mp3
+|    |    |----09 - Answer Me.mp3
+|    |    |----10 - Der Strom.mp3
+|    |    |----11 - Nichts (Ist Kalter Als Deine Liebe).mp3
+|    |    |----12 - Nothing.mp3
+|    |    |----13 - Diesmal Wirst Du Sehen.mp3
+|    |    |----14 - Tief In Dir.mp3
+|    |    |----cover.jpg
+|    |----2006 - Delikatessen (Cd1)
+|    |    |----01 - Gekreuzigt 2006.mp3
+|    |    |----02 - Augen Auf!.mp3
+|    |    |----03 - Traumst Du.mp3
+|    |    |----04 - Fieber (Feat. Nina Hagen).mp3
+|    |    |----05 - Supernova.mp3
+|    |    |----06 - Brennende Liebe (Feat. Lame Immortelle).mp3
+|    |    |----07 - Das Letzte Streichholz.mp3
+|    |    |----08 - Das Weisse Licht.mp3
+|    |    |----09 - Gott Ist Ein Popstar.mp3
+|    |    |----10 - Sex Hat Keine Macht (Single Version).mp3
+|    |    |----11 - The Power Of Love.mp3
+|    |    |----12 - Die Schlinge (Feat. Apocalyptica).mp3
+|    |    |----13 - Unsere Rettung.mp3
+|    |    |----14 - Ich Bin Du.mp3
+|    |    |----15 - Der Neue Gott.mp3
+|    |    |----16 - Niemand.mp3
+|    |    |----17 - Sex.mp3
+|    |    |----18 - Wunschkind.mp3
+|    |    |----19 - Ice-Coffin.mp3
+|    |    |----cover.jpg
+|    |----2006 - Delikatessen (Cd2)
+|    |    |----01 - Weisst Du Wieviel Sterne Stehen.mp3
+|    |    |----02 - Zauberstab.mp3
+|    |    |----03 - Die Hulle Kann Warten.mp3
+|    |    |----04 - Polizisten.mp3
+|    |    |----05 - The World Is Yours.mp3
+|    |    |----06 - Der Prdsident Ist Tot.mp3
+|    |    |----07 - Kill Me Again.mp3
+|    |    |----08 - Eiszeit.mp3
+|    |    |----08 - Fragment.mp3
+|    |    |----10 - Asshole.mp3
+|    |    |----11 - Feiert Das Kreuz (Pope Mix).mp3
+|    |    |----12 - U Said (Primary Mix).mp3
+|    |    |----13 - Fleisch.mp3
+|    |    |----14 - A.L.I.V.E..mp3
+|    |    |----15 - Sex Hat Keine Macht (Transporterraum Mix).mp3
+|    |    |----16 - Gott Ist Ein Popstar (Silvester Remix).mp3
+|    |    |----17 - Brennende Liebe (Transporterraum Mix).mp3
+|    |    |----18 - Das Letzte Streichholz ([Sitd] Remix).mp3
+|    |    |----19 - Augen Auf (Freizeichen Vs. Oomph!. Remix).mp3
+|    |    |----cover.jpg
+|    |----2006 - Die Schlinge EP
+|    |    |----01 - Die Schlinge (feat. Apocalyptica).mp3
+|    |    |----03 - Polizisten.mp3
+|    |    |----04 - Zauberstab.mp3
+|    |----2006 - Gekreuzigt 2006
+|    |    |----01 - Gekreuzigt 2006.mp3
+|    |    |----02 - The Power Of Love.mp3
+|    |    |----03 - Gott ist ein popstar (voltaxx dogmatixx remix).mp3
+|    |    |----04 - Das letzte streichholz (naidanow and dith remix).mp3
+|    |    |----05 - Gekreuzigt 2006 (bounce remix).mp3
+|    |----2006 - Glaube LiebeTod
+|    |    |----01 - Gott Ist Ein Popstar.mp3
+|    |    |----02 - Das Letzte Steichholz.mp3
+|    |    |----03 - Traeumst Du.mp3
+|    |    |----04 - Die Schlinge.mp3
+|    |    |----05 - Du Willst Es Doch Auch.mp3
+|    |    |----06 - Eine Frau Spricht Im Schlaf.mp3
+|    |    |----07 - Mein Schatz.mp3
+|    |    |----08 - Dreh Dich Nicht Um.mp3
+|    |    |----09 - Land Im Sicht.mp3
+|    |    |----10 - Tanz In Den Tod.mp3
+|    |    |----11 - Ich Will Deine Seele.mp3
+|    |    |----12 - Zuviel Liebe Kann Dich Toeten.mp3
+|    |    |----13 - Wenn Du Mich Laesst.mp3
+|    |    |----14 - Menschsein.mp3
+|    |    |----cover.jpg
+|    |----2006 - Gott ist ein Popstar
+|    |    |----01 - Gott ist ein Popstar.mp3
+|    |    |----02 - Ich will Deine Seele.mp3
+|    |    |----03 - Weisst Du wie viel Sterne stehen.mp3
+|    |    |----04 - Fragment.mp3
+|    |    |----05 - Gott ist ein Popstar (Transporterraum Mix).mp3
+|    |----2008 - Monster
+|    |    |----01 -  Beim Ersten Mal Tuts Immer Weh.mp3
+|    |    |----02 - Labyrinth.mp3
+|    |    |----03 - 6 Fuss Tiefer.mp3
+|    |    |----04 - Wer Schoen Sein Will Muss Leiden.mp3
+|    |    |----05 - Die Leiter.mp3
+|    |    |----06 - Lass Mich Raus.mp3
+|    |    |----07 - Revolution.mp3
+|    |    |----08 - Auf Kurs.mp3
+|    |    |----09 - Bis Zum Schluss.mp3
+|    |    |----10 - In Deinen Hueften.mp3
+|    |    |----11 - Wach Auf.mp3
+|    |    |----12 - Geborn Zu Sterben.mp3
+|    |    |----13 - Brich Aus.mp3
+|    |    |----cover.jpg
+|    |----Industrial Metal Electro Crossover [ger].txt
+|----Rammstein
+|    |----1995 - Herzeleid
+|    |    |----(02) 1995 Herzeleid.jpg
+|    |    |----01-Wollt Ihr Das Bett In Flammen Sehen.mp3
+|    |    |----02-Der Meister.mp3
+|    |    |----03-Weisses Fleisch.mp3
+|    |    |----04-Asche Zu Asche.mp3
+|    |    |----05-Seemann.mp3
+|    |    |----06-Du Riechst So Gut.mp3
+|    |    |----07-Das Alte Leid.mp3
+|    |    |----08-Heirate Mich.mp3
+|    |    |----09-Herzeleid.mp3
+|    |    |----10-Laichzeit.mp3
+|    |    |----11-Rammstein.mp3
+|    |----1997 - Sehnsucht
+|    |    |----(08) 1997 Sehnsucht [Japan].jpg
+|    |    |----01-[Sehnsucht].mp3
+|    |    |----02-[Engel].mp3
+|    |    |----03-[Tier].mp3
+|    |    |----04-[Bestrafe Mich].mp3
+|    |    |----05-[Du Hast].mp3
+|    |    |----06-[Buck Dich].mp3
+|    |    |----07-[Spiel Mit Mir].mp3
+|    |    |----08-[Klavier].mp3
+|    |    |----09-[Alter Mann].mp3
+|    |    |----10-[Eifersucht].mp3
+|    |    |----11-[Kuss Mich [Fellfrosch]].mp3
+|    |----2001 - Mutter
+|    |    |----(15) 2001 Mutter.jpg
+|    |    |----01-Mein Herz Brennt.mp3
+|    |    |----02-Links 2 3 4.mp3
+|    |    |----03-Sonne.mp3
+|    |    |----04-Ich Will.mp3
+|    |    |----05-Feuer Frei!.mp3
+|    |    |----06-Mutter.mp3
+|    |    |----07-Spieluhr.mp3
+|    |    |----08-Zwitter.mp3
+|    |    |----09-Rein Raus.mp3
+|    |    |----10-Adios.mp3
+|    |    |----11-Nebel.mp3
+|    |    |----Mutter.doc
+|    |----2004 - Reise, reise
+|    |    |----01 - Reise, reise.mp3
+|    |    |----02 - Mein Teil.mp3
+|    |    |----03 - Dalai Lama.mp3
+|    |    |----04 - Keine lust.mp3
+|    |    |----05 - Los.mp3
+|    |    |----06 - Amerika.mp3
+|    |    |----07 - Moskau.mp3
+|    |    |----08 - Morgenstern.mp3
+|    |    |----09 - Stein um stein.mp3
+|    |    |----10 - Ohne dich.mp3
+|    |    |----11 - Amour.mp3
+|    |    |----1296.jpg
+|    |    |----Reise, reise.doc
+|    |----2005 - Rosenrot
+|    |    |----01 - Benzin.mp3
+|    |    |----02 - Ein leid.mp3
+|    |    |----03 - Feuer und Wasser.mp3
+|    |    |----04 - Hilf mir.mp3
+|    |    |----05 - Man gegen Man.mp3
+|    |    |----06 - Rosenrot.mp3
+|    |    |----07 - Spring.mp3
+|    |    |----08 - Stirb nicht vor mir - Don't die before I do.mp3
+|    |    |----09 - Te quiero Puta!.mp3
+|    |    |----10 - Wo bist du.mp3
+|    |    |----11 - Zerstoren.mp3
+|    |    |----2925.jpg
+|    |    |----rosenrot.doc
+|    |----2009 - Liebe Ist Fur Alle Da
+|    |    |----01-rammlied.mp3
+|    |    |----02-ich_tu_dir_weh.mp3
+|    |    |----03-waidmanns_heil.mp3
+|    |    |----04-haifisch.mp3
+|    |    |----05-Buckstabu.mp3
+|    |    |----06-fruhling_in_paris.mp3
+|    |    |----07-wiener_blut.mp3
+|    |    |----08-pussy.mp3
+|    |    |----09-liebe_ist_fur_alle_da.mp3
+|    |    |----10-mehr.mp3
+|    |    |----11-roter_sand.mp3
+|    |    |----Liebe Ist Fur Alle Da.doc
+|    |    |----Liebe_Ist_Fur_Alle_Da.jpg
+|    |----2009 - Liebe Ist Fur Alle Da [Bonus CD]
+|    |    |----01 - Fuhre Mich.mp3
+|    |    |----02 - Donaukinder.mp3
+|    |    |----03 - Halt.mp3
+|    |    |----05 - Liese.mp3
+|    |    |----cover.jpg
+|    |----2011 - Mein_Land-CDM-DE-MOD
+|    |    |----01_rammstein_-_mein_land.mp3
+|    |    |----02_rammstein_-_vergiss_uns_nicht.mp3
+|    |    |----03_rammstein_-_my_country_(the_boss_hoss).mp3
+|    |    |----04_rammstein_-_mein_land_-_mogwai_mix.mp3
+|    |----Remixes
+|    |    |----004_Rammstein - Rosenrot (The Tweaker Remix By Chris Vrenna).mp3
+|    |    |----011_Rammstein - Amerika (Andy Panthen and Mat Diazs Clubmix).mp3
+|    |    |----012_Rammstein - Keine Lust (remix № 1 by Clawfinger).mp3
+|    |    |----02-Du Riechst So Gut Rmx By Faith No More.mp3
+|    |    |----03-Du Hast ( Remix By Jacob Hellner).mp3
+|    |    |----03-Du Riechst So Gut (Scal Remix).mp3
+|    |    |----03-Du Riechst So Gut Rmx By Gunter Schulz - KMFDM & Hiwatt.mp3
+|    |    |----03-Rammstein [Eskimos & Egypt Radio Edit].mp3
+|    |    |----03-Stripped (Heavy Mental Mix By Charly Clauser).mp3
+|    |    |----04 - Ich Tu Dir Weh (Smallboy Remix By Jochen Schmalbach).mp3
+|    |    |----04-Du Hast (Remix By Clawfinger).mp3
+|    |    |----04-Du Riechst So Gut Rmx By Sascha Konietzko - KMFDM.mp3
+|    |    |----06-Du Riechst So Gut Rmx By Sascha Moser - Bobo In White W.mp3
+|    |    |----Amerika (Clubmix).mp3
+|    |    |----Mein teil (Remix by Pet shop boys).mp3
+|    |    |----Rammstein8.jpg
+|    |    |----rammstein_-_benzin_kerosinii_remix_by_apocalyptica.mp3
+|    |    |----Sonne (Clawfinger rmx).mp3
+|    |----Синглы и др
+|    |    |----02. SPOOKSHOW BABY (Rammstein Mix - Rob Zombie).mp3
+|    |    |----04 - Roter Sand (Orchester Version).mp3
+|    |    |----09. GOOD GOD (Korn - Rammstein Remix).mp3
+|    |    |----Das Modell.mp3
+|    |    |----Feuerrader.mp3
+|    |    |----hallelujah.mp3
+|    |    |----Ich_Hasse_Musik.mp3
+|    |    |----Kokain.mp3
+|    |    |----Last_Cup_of_Sorrow.mp3
+|    |    |----Mein herz brennt (Orchesterlied version).mp3
+|    |    |----Pesnya-o-trevozhnoy-molodosti.mp3
+|    |    |----Pet semetery.mp3
+|    |    |----Rammstein - Was ich liebe .mp3
+|    |    |----Rammstein5.jpg
+|    |    |----rammstein_-_helden.mp3
+|    |    |----Schtiel (Till Lindemann & Richard Kruspe).mp3
+|    |    |----Schwarzes Glas.mp3
+|    |    |----Wilder Wein.mp3
+|    |    |----Wut Will Nicht Sterben.mp3
+|    |    |----песня о тревожной молодости.txt
+|    |----07. Mein Herz brennt - Piano Version.mp3
+|    |----08. Los - Full Band Version.mp3
+|    |----10. Rammstein - Sonne (Instrumental).mp3
+|    |----12. Roter Sand - Orchester Version.mp3
+|    |----16. Gib Mir Deine Augen.mp3
+|    |----Rammstein9.jpg
+|    |----Rammstein_-_Гимн_МЧС_Песня_о_тревожной_молодости__Russisch__LEID_UBER_DIE_BEUNRUHIGTE_JUGEND_SOWJETI.mp3
+|----Tanzwut
+|    |----1999 - Tanzwut
+|    |    |----01_Exkremento.mp3
+|    |    |----02_Im Rausch.mp3
+|    |    |----03_Konigreich.mp3
+|    |    |----04_Das Schiksal.mp3
+|    |    |----05_Verruckt.mp3
+|    |    |----06_Augen Zu.mp3
+|    |    |----07_Auferstehung.mp3
+|    |    |----08_Eisenmann.mp3
+|    |    |----09_Erinnerung.mp3
+|    |    |----10_Die Balz.mp3
+|    |    |----11_Komm Her.mp3
+|    |----2000 - Labyrinth Der Sinne
+|    |    |----01_Tanzwut.mp3
+|    |    |----02_Extase.mp3
+|    |    |----03_Lugner.mp3
+|    |    |----04_Bitte, Bitte.mp3
+|    |    |----05_Labyrinth.mp3
+|    |    |----06_Niemals Ohne Dich.mp3
+|    |    |----07_Die Drohne.mp3
+|    |    |----08_Der Wachter.mp3
+|    |    |----09_Dammerung.mp3
+|    |    |----10_Was Soll Der Teufel Im Paradies.mp3
+|    |    |----11_Gigolo.mp3
+|    |    |----12_Ikarus.mp3
+|    |    |----13_Gotterfunken.mp3
+|    |----2003 - Ihr Wolltet Spass
+|    |    |----01_Weider Da.mp3
+|    |    |----02_Nein Nein.mp3
+|    |    |----03_Der Traum.mp3
+|    |    |----04_Meer.mp3
+|    |    |----05_Zaubern.mp3
+|    |    |----06_Fur Immer.mp3
+|    |    |----07_Fatue.mp3
+|    |    |----08_Erdbeerrot.mp3
+|    |    |----09_Ihr Wolltet Spass.mp3
+|    |    |----10_Der Fluch.mp3
+|    |    |----11_Gnade.mp3
+|    |    |----12_Caupona.mp3
+|    |----2006 - Schattenreiter
+|    |    |----CD 1
+|    |    |----CD 2
+|    |    |----folder.jpg
+|----someFile.txt
+|----Stahlhammer_-_Feind_Hoert_Mit.mp3
