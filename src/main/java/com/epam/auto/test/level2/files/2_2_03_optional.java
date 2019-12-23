@@ -1,4 +1,5 @@
-/*/
+/*demo file for 3 optional task 2.2*/
+/*
 @Service(name = "service")
 public class SimpleService {
     @Init

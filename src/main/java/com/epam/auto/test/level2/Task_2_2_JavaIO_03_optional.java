@@ -12,9 +12,8 @@ public class Task_2_2_JavaIO_03_optional {
         List<String> listStrings = new ArrayList<>();
         final String INPUT_FILE = "src/main/java/com/epam/auto/test/level2/files/2_2_03_optional.java";
         final String OUTPUT_FILE = "src/main/java/com/epam/auto/test/level2/files/output_optionals.java";
-        try (Reader read = new FileReader(INPUT_FILE); Writer writer = new FileWriter(OUTPUT_FILE)){
+        try (Reader read = new FileReader(INPUT_FILE); Writer writer = new FileWriter(OUTPUT_FILE)) {
             scanner = new Scanner(read);
-            System.out.println(scanner.hasNextLine());
             while (scanner.hasNextLine()) {
                 listStrings.add(scanner.nextLine());
             }
