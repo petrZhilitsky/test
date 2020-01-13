@@ -63,16 +63,12 @@ public class GoogleCloudPricingCalculatorPage {
     }
 
     public boolean checkEstimate() {
-        boolean check = false;
         boolean vmClass = checkValue("//*[@id='compute']//md-list-item[2]", "regular");
         boolean instanceType = checkValue("//*[@id='compute']//md-list-item[3]", "n1-standard-8");
         boolean region = checkValue("//*[@id='compute']//md-list-item[4]", "Frankfurt");
         boolean localSSD = checkValue("//*[@id='compute']//md-list-item[5]", "2x375 GB");
         boolean commitmentTerm = checkValue("//*[@id='compute']//md-list-item[6]", "1 Year");
-        if (vmClass && instanceType && region && localSSD && commitmentTerm) {
-            check = true;
-        }
-        return check;
+        return (vmClass && instanceType && region && localSSD && commitmentTerm);
     }
 
     public boolean checkTotalPrice(String price) {

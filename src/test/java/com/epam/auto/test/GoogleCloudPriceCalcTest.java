@@ -21,7 +21,7 @@ public class GoogleCloudPriceCalcTest {
     }
 
     @Test
-    public void fillFormAndCheckEstimateValues() {
+    public void fillFormAndCheckEstimateValues_test() {
         //'Hurt Me Plenty' task
         new GoogleCloudMainPage(webDriverCalc).openFirstCalcPage();
         GoogleCloudPricingCalculatorPage pricingCalculatorPage = new GoogleCloudPricingCalculatorPage(webDriverCalc).fillForm();
@@ -29,7 +29,7 @@ public class GoogleCloudPriceCalcTest {
     }
 
     @Test
-    public void sendEmailAndCheckTotalCost() {
+    public void sendEmailAndCheckTotalCost_test() {
         //'Hardcore' task
         new GoogleCloudMainPage(webDriverCalc).openFirstCalcPage();
         GoogleCloudPricingCalculatorPage pricingCalculatorPage = new GoogleCloudPricingCalculatorPage(webDriverCalc).fillForm();

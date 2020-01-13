@@ -48,4 +48,8 @@ public class PastebinMainPage {
     public WebElement checkNewPasteCode(String code) {
         return this.webDriver.findElement(By.xpath("//*[text()='" + code + "']"));
     }
+
+    public WebElement checkBashHighlight(String bash) {
+        return this.webDriver.findElement(By.xpath("//a[text()='" + bash + "']"));
+    }
 }
