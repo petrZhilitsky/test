@@ -43,7 +43,8 @@ public class YandexDiskMainPage {
         webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         if (!webDriver.findElements(accountAvatarButton).isEmpty()) {
             webDriver.findElement(accountAvatarButton).click();
-            return !webDriver.findElements(By.xpath("//div/span[@class='user-account__name' and text()='" + login + "']")).isEmpty();
+            return !webDriver.findElements(By.xpath(
+                    String.format("//div/span[@class='user-account__name' and text()='%1$s']", login))).isEmpty();
         }
         return false;
     }

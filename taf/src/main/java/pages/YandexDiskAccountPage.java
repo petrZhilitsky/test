@@ -188,37 +188,37 @@ public class YandexDiskAccountPage {
                 )).isEmpty();
     }
 
-    public boolean checkCreatedFileExistsAndHasProperContent(String folderName, String fileName, String inputText) {
-        boolean fileExists = false;
-        boolean contentEquals = false;
-        Actions actions = new Actions(webDriver);
+    public boolean checkCreatedFileExists(String folderName, String fileName) {
+        navigateFilesItem();
         goToFolder(folderName);
-        fileExists = !new WebDriverWait(webDriver, 20).until(
+        return !new WebDriverWait(webDriver, 20).until(
                 ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(
                         String.format("//div[@class='listing__items']//*[contains(text(),'%1$s') or contains(@title,'%1$s')]", fileName))
                 )).isEmpty();
-        if (fileExists) {
-            actions.doubleClick(webDriver.findElement(By.xpath(
-                    String.format("//div[@class='listing__items']//*[contains(text(),'%1$s') or contains(@title,'%1$s')]", fileName)))
-            ).perform();
-            switchChromeTabs(1);
-            webDriver.switchTo().frame(0);
+    }
 
-            new WebDriverWait(webDriver, 20).until(
-                    ExpectedConditions.visibilityOfElementLocated(inputTextToFile)
-            ).sendKeys(Keys.CONTROL + "f");
+    public boolean checkCreatedFileHasProperContent(String folderName, String fileName, String inputText) {
+        navigateFilesItem();
+        goToFolder(folderName);
+        Actions actions = new Actions(webDriver);
+        actions.doubleClick(webDriver.findElement(By.xpath(
+                String.format("//div[@class='listing__items']//*[contains(text(),'%1$s') or contains(@title,'%1$s')]", fileName)
+        ))).perform();
+        switchChromeTabs(1);
+        webDriver.switchTo().frame(0);
 
-            new WebDriverWait(webDriver, 20).until(
-                    ExpectedConditions.visibilityOfElementLocated(inputFindText)
-            ).sendKeys(inputText);
+        new WebDriverWait(webDriver, 20).until(
+                ExpectedConditions.visibilityOfElementLocated(inputTextToFile)
+        ).sendKeys(Keys.CONTROL + "f");
 
-            contentEquals = !new WebDriverWait(webDriver, 20).until(
-                    ExpectedConditions.visibilityOfAllElementsLocatedBy(
-                            By.xpath(String.format("//*[text()='%1$s']", inputText))
-                    )).isEmpty();
-        }
-        System.out.println(fileExists + " " + contentEquals);
-        return (fileExists && contentEquals);
+        new WebDriverWait(webDriver, 20).until(
+                ExpectedConditions.visibilityOfElementLocated(inputFindText)
+        ).sendKeys(inputText);
+
+        return !new WebDriverWait(webDriver, 20).until(
+                ExpectedConditions.visibilityOfAllElementsLocatedBy(
+                        By.xpath(String.format("//*[text()='%1$s']", inputText))
+                )).isEmpty();
     }
 
     public boolean checkFileInTrash(String fileName) {

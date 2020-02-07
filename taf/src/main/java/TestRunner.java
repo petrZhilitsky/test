@@ -1,6 +1,9 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+
+import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertFalse;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -24,25 +27,25 @@ public class TestRunner {
         webDriver = new ChromeDriver();
     }
 
-    @Test(priority = 1)
+    @Test
     public void logInYandexDiskAccountPositive() {
         YandexDiskMainPage mainPageLogIn = new YandexDiskMainPage(webDriver).logInToAccount(LOGIN, PASSWORD);
-        Assert.assertTrue(mainPageLogIn.checkLoggedIn(LOGIN), "Log In failed");
+        assertTrue(mainPageLogIn.checkLoggedIn(LOGIN), "Log In failed");
     }
 
-    @Test(priority = 2)
+    @Test
     public void logInYandexDiskAccountNegative() {
         YandexDiskMainPage mainPageLogIn = new YandexDiskMainPage(webDriver).logInToAccount(LOGIN, PASSWORD + "!");
-        Assert.assertFalse(mainPageLogIn.checkLoggedIn(LOGIN), "Log In succeeded");
+        assertFalse(mainPageLogIn.checkLoggedIn(LOGIN), "Log In succeeded");
     }
 
-    @Test(priority = 3)
+    @Test
     public void checkNavigationMenuItems() {
         new YandexDiskMainPage(webDriver).logInToAccount(LOGIN, PASSWORD);
-        Assert.assertTrue(new YandexDiskAccountPage(webDriver).checkMainMenuItems(), "Navigation URLs incorrect");
+        assertTrue(new YandexDiskAccountPage(webDriver).checkMainMenuItems(), "Navigation URLs incorrect");
     }
 
-    @Test(priority = 4)
+    @Test
     public void createAndVisitNewFolder() {
         new YandexDiskMainPage(webDriver).logInToAccount(LOGIN, PASSWORD);
         YandexDiskAccountPage yandexDiskPage = new YandexDiskAccountPage(webDriver).createNewFolder(CURRENT_FOLDER_NAME);
@@ -52,29 +55,34 @@ public class TestRunner {
         softAssert.assertAll();
     }
 
-    @Test(priority = 5)
+    @Test(dependsOnMethods = {"createAndVisitNewFolder"})
     public void createAndRenameNewFile() {
         new YandexDiskMainPage(webDriver).logInToAccount(LOGIN, PASSWORD);
         YandexDiskAccountPage yandexDiskPage = new YandexDiskAccountPage(webDriver)
                 .createNewFileInFolder(CURRENT_FOLDER_NAME, CURRENT_FILE_NAME, INPUT_TEXT);
-        Assert.assertTrue(yandexDiskPage.checkCreatedFileExistsAndHasProperContent(
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(yandexDiskPage.checkCreatedFileExists(
+                CURRENT_FOLDER_NAME, CURRENT_FILE_NAME), "New file creation failed"
+        );
+        softAssert.assertTrue(yandexDiskPage.checkCreatedFileHasProperContent(
                 CURRENT_FOLDER_NAME, CURRENT_FILE_NAME, INPUT_TEXT),
                 "New file creation failed"
         );
+        softAssert.assertAll();
     }
 
-    @Test(priority = 6)
-    public void removeFileTotrash() {
+    @Test(dependsOnMethods = {"createAndVisitNewFolder", "createAndRenameNewFile"})
+    public void removeFileToTrash() {
         new YandexDiskMainPage(webDriver).logInToAccount(LOGIN, PASSWORD);
-        YandexDiskAccountPage yandexDiskPage = new YandexDiskAccountPage(webDriver).moveFileToTrash("temp_folder", "tempfile");
-        Assert.assertTrue(yandexDiskPage.checkFileInTrash("tempfile"), "File was not removed");
+        YandexDiskAccountPage yandexDiskPage = new YandexDiskAccountPage(webDriver).moveFileToTrash(CURRENT_FOLDER_NAME, CURRENT_FILE_NAME);
+        assertTrue(yandexDiskPage.checkFileInTrash(CURRENT_FILE_NAME), "File was not removed");
     }
 
-    @Test(priority = 7)
+    @Test(dependsOnMethods = {"createAndVisitNewFolder", "createAndRenameNewFile", "removeFileToTrash"})
     public void remofeFileFromTrash() {
         new YandexDiskMainPage(webDriver).logInToAccount(LOGIN, PASSWORD);
-        YandexDiskAccountPage yandexDiskPage = new YandexDiskAccountPage(webDriver).deleteFileCompletly("tempfile");
-        Assert.assertFalse(yandexDiskPage.checkFileInTrash("tempfile"), "File was not deleted from Trash");
+        YandexDiskAccountPage yandexDiskPage = new YandexDiskAccountPage(webDriver).deleteFileCompletly(CURRENT_FILE_NAME);
+        assertFalse(yandexDiskPage.checkFileInTrash(CURRENT_FILE_NAME), "File was not deleted from Trash");
     }
 
     @AfterMethod(alwaysRun = true)
