@@ -1,17 +1,11 @@
 package google.framework.pages;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 public class GoogleCloudMainPage extends AbstractPage {
     private static final String URL = "https://cloud.google.com/";
@@ -29,24 +23,21 @@ public class GoogleCloudMainPage extends AbstractPage {
     }
 
     public GoogleCloudMainPage inputSearchAndSubmit() {
-        WebElement openLangs = waitWebElementAndClick("(//*[@class='devsite-select-toggle'])[1]");
-        WebElement choseLang = waitWebElementAndClick("(//li[text()='English'])[1]");
+        //choose language to prevent double calculator loading
+        waitWebElementAndClick("(//*[@class='devsite-select-toggle'])[1]");
+        waitWebElementAndClick("(//li[text()='English'])[1]");
 
-        WebElement inputSearch = waitWebElement("//input[@name='q']");
+        //input search text
+        WebElement inputSearch = new WebDriverWait(webDriver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='q']")));
         inputSearch.sendKeys(SEARCH_CALC);
         inputSearch.submit();
         return this;
     }
 
     public GoogleCloudPricingCalculatorPage openFirstCalcPage() {
-        WebElement calcSearchResult = waitWebElement("(//b[text()='" + SEARCH_CALC + "'])[1]");
-        calcSearchResult.click();
+        waitWebElementAndClick("(//b[text()='" + SEARCH_CALC + "'])[1]");
         return new GoogleCloudPricingCalculatorPage(webDriver);
-    }
-
-    private WebElement waitWebElement(String xpath) {
-        return new WebDriverWait(webDriver, WAIT_TIMEOUT_SECONDS)
-                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
 
     private WebElement waitWebElementAndClick(String xpath) {

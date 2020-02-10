@@ -25,7 +25,7 @@ public class GoogleCloudPriceCalcTest extends CommonConditions {
         String totalCostFromCalc = calcPage.getTotalPrice();
 
         JavascriptExecutor executor = (JavascriptExecutor) webDriver;
-        executor.executeScript("window.open('https://10minutemail.com','_blank');");
+        executor.executeScript("window.open('https://tempmailo.com','_blank');");
         TenMinuteMailPage emailPage = new TenMinuteMailPage(webDriver);
 
         ArrayList<String> tabs = new ArrayList<>(webDriver.getWindowHandles());

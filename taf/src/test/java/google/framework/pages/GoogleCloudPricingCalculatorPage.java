@@ -1,7 +1,5 @@
 package google.framework.pages;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -33,38 +31,44 @@ public class GoogleCloudPricingCalculatorPage extends AbstractPage {
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Number of instances')]/following::input[1]")));
         instances.sendKeys("4");
 
-        WebElement machineTypes = waitWebElementAndClick("//*[text()='Machine type']/following::md-select[1]");
-        WebElement choseMachineType = waitWebElementAndClick("//md-option[@value='CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8']");
+        //choose machine type
+        waitWebElementAndClick("//*[text()='Machine type']/following::md-select[1]");
+        waitWebElementAndClick("//md-option[@value='CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8']");
 
-        WebElement addGPUs = waitWebElementAndClick("//md-checkbox[@ng-model='listingCtrl.computeServer.addGPUs']");
+        //checkbox 'add GPUs'
+        waitWebElementAndClick("//md-checkbox[@ng-model='listingCtrl.computeServer.addGPUs']");
 
-        WebElement numbersOfGPUs = waitWebElementAndClick("//*[text()='Number of GPUs']/following::md-select[1]");
-        WebElement choseNumberOfGPUs = waitWebElementAndClick(
-                "//md-option[@ng-repeat='item in listingCtrl.supportedGpuNumbers[listingCtrl.computeServer.gpuType]' and @value='1']"
-        );
+        //choose GPUs number
+        waitWebElementAndClick("//*[text()='Number of GPUs']/following::md-select[1]");
+        waitWebElementAndClick("//md-option[@ng-repeat='item in listingCtrl.supportedGpuNumbers[listingCtrl.computeServer.gpuType]' and @value='1']");
 
-        WebElement typesGPU = waitWebElementAndClick("//*[text()='GPU type']/following::md-select[1]");
-        WebElement choseTypeGPU = waitWebElementAndClick("//md-option[@value='NVIDIA_TESLA_V100']");
+        //choose GPU type
+        waitWebElementAndClick("//*[text()='GPU type']/following::md-select[1]");
+        waitWebElementAndClick("//md-option[@value='NVIDIA_TESLA_V100']");
 
-        WebElement localSSDs = waitWebElementAndClick("//*[text()='Local SSD']/following::md-select[1]");
-        WebElement choseLocalSSD = waitWebElementAndClick("//md-option[@ng-repeat='item in listingCtrl.supportedSsd' and @value='2']");
+        //choose local SSD
+        waitWebElementAndClick("//*[text()='Local SSD']/following::md-select[1]");
+        waitWebElementAndClick("//md-option[@ng-repeat='item in listingCtrl.supportedSsd' and @value='2']");
 
-        WebElement datacenterLocations = waitWebElementAndClick("//*[@ng-model='listingCtrl.computeServer.location']");
-        WebElement choseDatacenterLocation = waitWebElementAndClick("(//md-option[@value='europe-west3'])[last()]");
+        //choose datacenter location
+        waitWebElementAndClick("//*[@ng-model='listingCtrl.computeServer.location']");
+        waitWebElementAndClick("(//md-option[@value='europe-west3'])[last()]");
 
-        WebElement committedUsages = waitWebElementAndClick("//*[@ng-model='listingCtrl.computeServer.cud']");
-        WebElement selectCommittedUsage = waitWebElementAndClick("(//div[text()='" + commitmentTerm + "'])[last()]");
+        //choose committed usage
+        waitWebElementAndClick("//*[@ng-model='listingCtrl.computeServer.cud']");
+        waitWebElementAndClick("(//div[text()='" + commitmentTerm + "'])[last()]");
 
-        WebElement addToEstimate = waitWebElementAndClick("//button[@ng-click='listingCtrl.addComputeServer(ComputeEngineForm);']");
+        //click 'add to estimate'
+        waitWebElementAndClick("//button[@ng-click='listingCtrl.addComputeServer(ComputeEngineForm);']");
         return this;
     }
 
     public GoogleCloudPricingCalculatorPage sendEmail(String email) {
         webDriver.switchTo().frame(0)
                 .switchTo().frame(0);
-        WebElement emailEstimate = waitWebElementAndClick("//button[@id='email_quote']");
+        waitWebElementAndClick("//button[@id='email_quote']");
         inputEmail.sendKeys(email);
-        WebElement sendEmail = waitWebElementAndClick("//button[@ng-click='emailQuote.emailQuote(true); emailQuote.$mdDialog.hide()']");
+        waitWebElementAndClick("//button[@ng-click='emailQuote.emailQuote(true); emailQuote.$mdDialog.hide()']");
         return this;
     }
 

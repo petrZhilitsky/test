@@ -1,7 +1,6 @@
 package google.framework.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -20,16 +19,20 @@ public class TenMinuteMailPage extends AbstractPage {
     }
 
     public String getEmailAddress() {
-        return webDriver.findElement(By.xpath("//input[@id='mailAddress']")).getAttribute("value");
+        return waitWebElement("//*[@id='i-email']")
+                .getAttribute("value");
     }
 
     public String getTotalCost() {
-        WebElement openMessage = new WebDriverWait(webDriver, WAIT_TIMEOUT_SECONDS)
-                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='ui-id-1']")));
-        openMessage.click();
-        return new WebDriverWait(webDriver, WAIT_TIMEOUT_SECONDS)
-                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='mobilepadding']//td[4]")))
+        waitWebElement("//*[contains(text(),'Google Cloud Sales')]").click();
+        webDriver.switchTo().frame(0);
+        return waitWebElement("(//tr[1]/td[4])[1]")
                 .getText()
                 .split(" ")[1];
+    }
+
+    private WebElement waitWebElement(String xpath) {
+        return new WebDriverWait(webDriver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
 }
