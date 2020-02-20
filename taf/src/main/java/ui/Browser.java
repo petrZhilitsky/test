@@ -137,7 +137,7 @@ public class Browser implements WrapsDriver {
         try {
             File screenshotAsFile = ((TakesScreenshot) wrappedWebDriver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotAsFile, screenshotFile);
-            Log.info("<a href=\"" + screenshotFile.getAbsolutePath() + "\" target=\"blank\">screenshot.file</a>");
+            Log.info(screenshotFile.getAbsolutePath());
         } catch (IOException e) {
             Log.error("Failed screenshot: " + e.getMessage());
         }
