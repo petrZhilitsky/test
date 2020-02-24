@@ -5,9 +5,7 @@ import google.framework.pages.GoogleCloudMainPage;
 import google.framework.pages.GoogleCloudPricingCalculatorPage;
 import google.framework.pages.TenMinuteMailPage;
 import google.framework.service.PriceCalcDataCreator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
