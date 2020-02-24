@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+    <appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd-MM-yyyy HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="file" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="logs/log.log"/>
+        <param name="append" value="true"/>
+        <param name="maxFileSize" value="10KB"/>
+        <param name="maxBackupIndex" value="10"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd-MM-yyyy HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="test" class="com.epam.gomel.tat.framework.utils.TestAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd-MM-yyyy HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="screenshot" class="com.epam.gomel.tat.framework.utils.TestAppender">
+        <param name="Threshold" value="INFO"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                   value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - &lt;a href =&apos;%m&apos;, target=&apos;blank&apos;&gt;screenshot.file&lt;/a&gt;%n"/>
+        </layout>
+    </appender>
+
+    <logger name="myLogger" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="file"/>
+        <appender-ref ref="test"/>
+        <appender-ref ref="screenshot"/>
+    </logger>
+
+    <root>
+        <level value="debug"/>
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="file"/>
+        <appender-ref ref="test"/>
+        <appender-ref ref="screenshot"/>
+    </root>
+</log4j:configuration>

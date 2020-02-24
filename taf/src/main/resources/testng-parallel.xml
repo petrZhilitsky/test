@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Yandex_disk" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.epam.gomel.tat.framework.utils.TestListener"/>
+    </listeners>
+
+    <test name="Yandex_disk_parallel_test_1">
+        <classes>
+            <class name="com.epam.gomel.tat.test.YandexDiskTest">
+                <methods>
+                    <include name="checkLoggedInYandexDiskAccount"/>
+                    <include name="checkNavigationMenuItems"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Yandex_disk_parallel_test_2">
+        <classes>
+            <class name="com.epam.gomel.tat.test.YandexDiskTest">
+                <methods>
+                    <include name="checkCreateAndVisitNewFolder"/>
+                    <include name="checkCreateAndVisitNewWordDocument"/>
+                    <include name="checkMoveFolderToTrash"/>
+                    <include name="checkRemoveFolderFromTrash"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
