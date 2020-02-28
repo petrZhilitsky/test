@@ -31,37 +31,37 @@ public class YandexDiskTest {
 
     @Test
     public void checkLoggedInYandexDiskAccount() {
-        assertTrue(accountService.isLoggedIn(user.getLogin()));
+        assertTrue(accountService.isLoggedIn(user.getLogin()), "User logging in failed");
     }
 
     @Test
     public void checkNavigationMenuItems() {
-        assertTrue(accountService.isMainMenuItemsWorksCorrect());
+        assertTrue(accountService.isMainMenuItemsWorksCorrect(),"Main Menu items navigation failed");
     }
 
     @Test
     public void checkCreateAndVisitNewFolder() {
         accountService.createNewFolder(folder);
-        assertTrue(accountService.isFolderCreated(folder));
+        assertTrue(accountService.isFolderCreated(folder), "Folder creating failed");
     }
 
     @Test(dependsOnMethods = {"checkCreateAndVisitNewFolder"})
     public void checkCreateAndVisitNewWordDocument() {
         accountService.createNewWordFile(folder, document);
-        assertTrue(accountService.isWordFileCreatedAndHasProperContent(folder, document));
+        assertTrue(accountService.isWordFileCreatedAndHasProperContent(folder, document), "File creating and editing failed");
     }
 
     @Test(dependsOnMethods = {"checkCreateAndVisitNewWordDocument"})
     public void checkMoveFolderToTrash() {
         accountService.createNewFolder(folderToDelete);
         accountService.moveFolderToTrash(folderToDelete);
-        assertTrue(accountService.isFolderInTrash(folderToDelete));
+        assertTrue(accountService.isFolderInTrash(folderToDelete), "Folder moving to trash failed");
     }
 
     @Test(dependsOnMethods = {"checkMoveFolderToTrash"})
     public void checkRemoveFolderFromTrash() {
         accountService.removeFolderFromTrash(folderToDelete);
-        assertFalse(accountService.isFolderInTrashNoWait(folderToDelete));
+        assertFalse(accountService.isFolderInTrashNoWait(folderToDelete), "Folder removing failed");
     }
 
     @AfterClass(alwaysRun = true)
