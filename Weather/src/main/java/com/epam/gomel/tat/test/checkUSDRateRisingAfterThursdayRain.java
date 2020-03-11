@@ -25,6 +25,9 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class checkUSDRateRisingAfterThursdayRain {
+    private static final String WEATHER_URL = "http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=34395593e0cb4adc87c200305200203&q=Homyel&format=xml&date=%s&enddate=%s";
+    private static final String CURRENCY_URL = "http://www.nbrb.by/API/ExRates/Rates/145?onDate=";
+    private static final String XPATH_EXPRESSION = "//weather/mintempC[not(contains(text(),'-'))]/following-sibling::hourly/precipMM[not(contains(text(),'0.0'))]/parent::hourly/parent::weather/date";
     private int thursdayRainCount = 0;
     private int fridayRateIncreaseCount = 0;
 
@@ -36,11 +39,7 @@ public class checkUSDRateRisingAfterThursdayRain {
             getLastMonthDay(calendar);
             String dateTo = calendarToString(calendar);
             Log.info("Request weather data for a period: " + dateFrom + " - " + dateTo);
-            InputStream response = given().when().get(
-                    "http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=34395593e0cb4adc87c200305200203&q=Homyel&format=xml" +
-                            "&date=" + dateFrom +
-                            "&enddate=" + dateTo
-            ).asInputStream();
+            InputStream response = given().when().get(String.format(WEATHER_URL, dateFrom, dateTo)).asInputStream();
             DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
             documentFactory.setNamespaceAware(true);
             DocumentBuilder documentBuilder = documentFactory.newDocumentBuilder();
@@ -48,8 +47,7 @@ public class checkUSDRateRisingAfterThursdayRain {
             XPathFactory xpathFactory = XPathFactory.newInstance();
             XPath xpath = xpathFactory.newXPath();
             Log.info("Search for rainy days in responce");
-            XPathExpression xPathExpression = xpath.compile(
-                    "//weather/mintempC[not(contains(text(),'-'))]/following-sibling::hourly/precipMM[not(contains(text(),'0.0'))]/parent::hourly/parent::weather/date");
+            XPathExpression xPathExpression = xpath.compile(XPATH_EXPRESSION);
             Object result = xPathExpression.evaluate(document, XPathConstants.NODESET);
             NodeList nodeList = (NodeList) result;
             for (int i = 0; i < nodeList.getLength(); i++) {
@@ -57,7 +55,7 @@ public class checkUSDRateRisingAfterThursdayRain {
             }
             calendar.add(Calendar.DATE, 1);
         }
-        Log.info("Count USD rate rising after thursday rain percentage");
+        Log.info("Count USD rate rising after thursdays' rain percentage");
         double matchPercentage = 0;
         if (thursdayRainCount != 0) {
             matchPercentage = (fridayRateIncreaseCount / (double) thursdayRainCount) * 100;
@@ -86,14 +84,12 @@ public class checkUSDRateRisingAfterThursdayRain {
 
     private void usdRiseCheck(String nodeDate) throws ParseException {
         Calendar currentDate = stringToCalendar(nodeDate);
-        if (currentDate.get(Calendar.DAY_OF_WEEK) == 5) {
+        if (currentDate.get(Calendar.DAY_OF_WEEK) == Calendar.THURSDAY) {
             Log.info("Request USD rate rising after " + currentDate.getTime());
             thursdayRainCount++;
-            Currency thursdayRate = get("http://www.nbrb.by/API/ExRates/Rates/145?onDate=" +
-                    calendarToString(currentDate)).as(Currency.class);
+            Currency thursdayRate = get(CURRENCY_URL + calendarToString(currentDate)).as(Currency.class);
             currentDate.add(Calendar.DATE, 1);
-            Currency fridayRate = get("http://www.nbrb.by/API/ExRates/Rates/145?onDate=" +
-                    calendarToString(currentDate)).as(Currency.class);
+            Currency fridayRate = get(CURRENCY_URL + calendarToString(currentDate)).as(Currency.class);
             if (fridayRate.getRate() > thursdayRate.getRate()) {
                 Log.info("USD rate rised");
                 fridayRateIncreaseCount++;
